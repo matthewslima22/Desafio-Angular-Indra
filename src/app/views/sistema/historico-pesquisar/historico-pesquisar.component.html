@@ -7,16 +7,22 @@
             <input matInput placeholder="combustivel" [(ngModel)]="historico.combustivel" name="combustivel">
         </mat-form-field>
 
-        <mat-form-field> 
-            <input matInput placeholder="data" [(ngModel)]="historico.data" name="data">
-        </mat-form-field>
+      
+        
+       
 
+          <div class="form-group row">
+            <label for="example-date-input" class="col-2 col-form-label" [(ngModel)]="historico.data" name="data">Data</label>
+            <div class="col-10">
+              <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+          </div>
 
         
     </form>
 
 
-
+<span  class="button">
 <button mat-raised-button (click)="createHistorico()" color="primary">
     Pesquisar
 </button>
@@ -24,4 +30,5 @@
 <button mat-raised-button (click)="cancel()" >
     Cancelar
 </button>
+</span>
 </mat-card>
