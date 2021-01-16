@@ -19,6 +19,11 @@ import { FooterComponent } from './views/home/footer/footer.component';
 import { HomeComponent } from './wviews/home/home.component';
 import { SistemaComponent } from './wviews/sistema/sistema.component';
 import { SistemaCreateComponent } from './views/sistema/sistema-create/sistema-create.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from'@angular/material/form-field'
+import {MatInputModule} from '@angular/material/input';
+import { HistoricoPesquisarComponent } from './views/sistema/historico-pesquisar/historico-pesquisar.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +35,8 @@ import { SistemaCreateComponent } from './views/sistema/sistema-create/sistema-c
     FooterComponent,
     SistemaComponent,
     SistemaCreateComponent,
+    HistoricoPesquisarComponent,
+    
   ],
   imports: [
     HttpClientModule,
@@ -42,7 +49,13 @@ import { SistemaCreateComponent } from './views/sistema/sistema-create/sistema-c
     MatTabsModule,
     MatCardModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSnackBarModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>
+        Pesquisar Historico
+    </mat-card-title>
+    <form>
+        <mat-form-field> 
+            <input matInput placeholder="combustivel" [(ngModel)]="historico.combustivel" name="combustivel">
+        </mat-form-field>
+
+        <mat-form-field> 
+            <input matInput placeholder="data" [(ngModel)]="historico.data" name="data">
+        </mat-form-field>
+
+
+        
+    </form>
+
+
+
+<button mat-raised-button (click)="createHistorico()" color="primary">
+    Pesquisar
+</button>
+
+<button mat-raised-button (click)="cancel()" >
+    Cancelar
+</button>
+</mat-card>
